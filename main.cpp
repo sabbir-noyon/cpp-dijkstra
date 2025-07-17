@@ -18,11 +18,9 @@ void dijkstra(int source, vector<vector<pii>>& graph, vector<int>& dist) {
         int u = pq.top().second;
         pq.pop();
 
-        
         if (d > dist[u]) continue;
 
-       
-        for (auto edge : graph[u]) {
+       for (auto edge : graph[u]) {
             int v = edge.first;
             int w = edge.second;
 
